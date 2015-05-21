@@ -31,7 +31,7 @@ This will add the new alias@office365bootcamp.com as a primary email address
 to all mailboxes.
 
 ##More Information
-URL
+http://exchangeserverpro.com/add-smtpaddresses-ps1-bulk-add-smtp-addresses-to-office-365-mailbox-users
 
 ##Credits
 Written by: Paul Cunningham
