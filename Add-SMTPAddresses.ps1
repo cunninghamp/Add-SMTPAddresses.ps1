@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 Add-SMTPAddresses.ps1 - Add SMTP addresses to Office 365 users for a new domain name
 
@@ -133,7 +133,7 @@ Foreach ($Mailbox in $Mailboxes)
     Write-Logfile ""
     Write-Logfile "Current addresses:"
     
-    $addresses = @($mailbox | Select -Expand EmailAddresses)
+    $addresses = @($mailbox | Select-Object -Expand EmailAddresses | ? {$_ -ne $NewAddress })
 
     foreach ($address in $addresses)
     {
@@ -145,7 +145,7 @@ Foreach ($Mailbox in $Mailboxes)
     {
         Write-LogFile ""
         Write-Logfile "Converting current primary address to secondary"
-        $addresses = $addresses.Replace("SMTP","smtp")
+        $addresses = @($addresses -Replace "SMTP","smtp")
     }
 
     #Add the new email address to the list of addresses
