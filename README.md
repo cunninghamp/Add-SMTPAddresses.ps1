@@ -5,13 +5,13 @@ This PowerShell script will add new SMTP addresses to existing Office 365 mailbo
 
 Results are output to a text log file.
 
-##Parameters
+## Parameters
 
 - -Domain, The new domain name to add SMTP addresses to each Office 365 mailbox user.
 - -MakePrimary, Specifies that the new email address should be made the primary SMTP address for the mailbox user.
 - -Commit, Specifies that the changes should be committed to the mailboxes. Without this switch no changes will be made to mailboxes but the changes that would be made are written to a log file for evaluation.
 
-##EXAMPLES
+## EXAMPLES
 ```
 .\Add-SMTPAddresses.ps1 -Domain office365bootcamp.com
 ```
@@ -30,10 +30,10 @@ to all mailboxes. Use the log file to evaluate the outcome before you re-run wit
 This will add the new alias@office365bootcamp.com as a primary email address
 to all mailboxes.
 
-##More Information
+## More Information
 http://exchangeserverpro.com/add-smtpaddresses-ps1-bulk-add-smtp-addresses-to-office-365-mailbox-users
 
-##Credits
+## Credits
 Written by: Paul Cunningham
 
 Find me on:
@@ -47,6 +47,9 @@ For more Exchange Server tips, tricks and news check out Exchange Server Pro.
 
 - Website:	http://exchangeserverpro.com
 - Twitter:	http://twitter.com/exchservpro
+
+Additional contributors:
+- Scott Buchanan [GitHub](https://github.com/scottsb) | [Website](https://buchanan.works/)
 
 Additional references:
 
